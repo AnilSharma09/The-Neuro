@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMind | Upload EEG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">NeuroMind AI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="upload.html" class="active">Analyze EEG</a>
+            <a href="chatbot.html">AI Assistant</a>
+        </div>
+    </nav>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+        <div class="glass-panel" style="width: 100%; max-width: 600px; text-align: center;">
+            <h2 style="margin-bottom: 2rem;">Upload EEG Data</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8;">
+                Supported formats: .csv, .edf, .txt<br>
+                Please ensure the file contains valid EEG signal data.
+            </p>
+
+            <div class="upload-zone" id="drop-zone">
+                <p>Drag & Drop your file here <br> or</p>
+                <input type="file" id="file-input" style="display: none;" accept=".csv, .edf, .txt">
+                <button class="btn-primary" onclick="document.getElementById('file-input').click()"
+                    style="margin-top: 1rem;">Browse Files</button>
+            </div>
+
+            <div id="file-info" style="margin-top: 1.5rem; display: none;">
+                <p>Selected: <span id="filename" style="font-weight: bold;"></span></p>
+            </div>
+
+            <div class="loader" id="loader" style="margin: 2rem auto;"></div>
+            <p id="status-text" style="display: none; margin-top: 1rem;">Processing signals...</p>
+
+            <button class="btn-primary" id="analyze-btn" style="width: 100%; margin-top: 2rem; display: none;">Run
+                Analysis</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Init Upload Logic specific hooks if needed, or handle all in app.js
+        // We'll handle everything in app.js for cleanliness
+    </script>
+</body>
+
+</html>

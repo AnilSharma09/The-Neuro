@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+numpy
+pandas
+scipy
+scikit-learn
+mne
+vaderSentiment

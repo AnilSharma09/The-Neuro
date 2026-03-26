@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMind | AI Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">NeuroMind AI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="upload.html">Analyze EEG</a>
+            <a href="chatbot.html" class="active">AI Assistant</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="glass-panel chat-container">
+            <div class="chat-header"
+                style="margin-bottom: 1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                <h3>Medical Assistant</h3>
+                <p style="font-size: 0.8rem; opacity: 0.7;">Ask about EEG results, disorders, or precautions. (Not a
+                    medical diagnosis)</p>
+            </div>
+
+            <div class="chat-history" id="chat-history">
+                <div class="message bot-message">
+                    Hello! I am your AI assistant. How can I help you understand your neurological health today?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your question here..."
+                    onkeypress="handleEnter(event)">
+                <button class="btn-primary" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        function handleEnter(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+    </script>
+</body>
+
+</html>

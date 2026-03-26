@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMind | EEG Analysis AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NeuroMind AI</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="upload.html">Analyze EEG</a>
+            <a href="chatbot.html">AI Assistant</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered <br><span>Neurological Diagnostic</span> Assistant</h1>
+            <p>
+                A state-of-the-art platform leveraging Machine Learning to detect disorders like Epilepsy, ADHD, and sleep issues from EEG signals. 
+                Upload your data and get instant insights.
+            </p>
+            <a href="upload.html" class="btn-primary">Start Analysis</a>
+        </div>
+        <div class="hero-image glass-panel">
+            <!-- Simple visualization placeholder or SVG -->
+            <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 150 C 50 150, 60 50, 100 150 S 140 250, 180 150 S 220 50, 260 150 S 300 250, 340 150" stroke="#00B4D8" stroke-width="3" fill="none"/>
+                <path d="M10 160 C 50 160, 60 100, 100 160 S 140 220, 180 160 S 220 100, 260 160 S 300 220, 340 160" stroke="#90E0EF" stroke-width="2" fill="none" opacity="0.5"/>
+                <text x="20" y="280" fill="white" font-family="Inter" font-size="14" opacity="0.7">Real-time brainwave monitoring</text>
+            </svg>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">How It Works</h2>
+        <div class="grid-3">
+            <div class="card glass-panel" style="text-align: center;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">1. Upload Data</h3>
+                <p>Submit EEG recordings (CSV, EDF, TXT) securely to our encrypted cloud processing unit.</p>
+            </div>
+            <div class="card glass-panel" style="text-align: center;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">2. AI Processing</h3>
+                <p>Our ML algorithms (SVM, Random Forest) extract delta, theta, alpha, beta, and gamma waves.</p>
+            </div>
+            <div class="card glass-panel" style="text-align: center;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">3. Instant Results</h3>
+                <p>Receive a comprehensive report on disorder risks and consult our AI medical chatbot.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
