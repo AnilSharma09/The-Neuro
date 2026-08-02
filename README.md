@@ -1,7 +1,6 @@
 # EEG-Based Intelligent Web Application for Neurological Disorder Detection
 
-This is a production-ready web application designed for a Final Year Major Project. It allows users to upload EEG datasets, analyzes brain waves, predicts neurological disorders using Machine Learning, and provides an AI medical chatbot.
-
+This is a production-ready web application designed for a Final Year Major Project. It allows users to upload EEG datasets, analyzes brain waves, predicts neurological disorders using Machine Learning, and provides an AI medical chatbot. 
 ## Features
 1. **EEG Data Upload**: Supports .csv, .edf, .txt formats.
 2. **Signal Processing**: Band-pass filtering, noise removal, normalization.
